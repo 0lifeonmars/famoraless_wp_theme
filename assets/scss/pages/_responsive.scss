@@ -1,0 +1,261 @@
+body{
+    main{
+        #profile{
+            @include media(md){min-height: $section-min-height;}
+            @include media(sm){min-height: $section-min-height;}
+            @include media(xs){min-height: $section-min-height;}
+
+            .profile-content{
+                @include media(md){min-height: $section-min-height;}
+                @include media(sm){min-height: $section-min-height;}
+                @include media(xs){min-height: $section-min-height;}
+
+                img{
+                    @include media(sm){display: none;}
+                    @include media(xs){display: none;}
+                }
+
+                .profile-info{
+                    @include media(lg){justify-content: flex-end;}
+                    @include media(md){justify-content: flex-end; height: 100%;}
+                    @include media(sm){justify-content: center; height: 100%;}
+                    @include media(xs){justify-content: center; height: 100%;}
+                    
+                    
+                    h2, p{
+                        @include media(sm){width: 100%;}
+                        @include media(xs){width: 100%;}
+                    }
+
+                    h2{
+                        @include media(lg){font-size: $f-size-60;}
+                        @include media(md){font-size: $f-size-50;}
+                        @include media(sm){font-size: $f-size-50;}
+                        @include media(xs){font-size: $f-size-40;}
+                    }
+
+                    p{
+                        @include media(lg){font-size: $f-size-40;}
+                        @include media(md){font-size: $f-size-30;}
+                        @include media(sm){font-size: $f-size-30;}
+                        @include media(xs){font-size: $f-size-24;}
+                    }
+
+                    span{
+                        @include media(sm){flex-direction: column;}
+                        @include media(xs){flex-direction: column;}
+
+                        .btn{
+                            @extend %btn-general-responsive;
+
+                            @include media(md){font-size: $f-size-16;}
+                            @include media(sm){font-size: $f-size-16; margin: $profile-info-btn-margin-sm;}
+                            @include media(xs){font-size: $f-size-14; margin: $profile-info-btn-margin-sm;}
+                        }
+                    }
+                }    
+            }
+        }
+
+        #about{
+            .header{
+                .color{
+                    @extend %section-header-responsive;
+
+                    img.profile{
+                        @include media(md){width: $about-profile-img-size-md; height: $about-profile-img-size-md;}
+                        @include media(sm){width: $about-profile-img-size-sm; height: $about-profile-img-size-sm;}
+                        @include media(xs){width: $about-profile-img-size-sm; height: $about-profile-img-size-sm;}
+                    }
+                }
+            }
+
+            h3.about-subtitle{
+                @extend %h4-responsive-font;
+            }
+            
+            p{
+                @extend %p-responsive-style;
+            }
+
+            .card{
+                .content{
+                    h4.strengths-title{
+                        @extend %subtitle-responsive-style;
+                    }
+                }
+            }
+
+            .skill-card{
+                .content{
+
+                    h4, p{
+                        @include media(sm){font-size: $f-size-16;}
+                        @include media(xs){font-size: $f-size-16;}
+                    }
+
+                    img.logo{
+                        @include media(md){width: $about-skill-logo-size-md; height: $about-skill-logo-size-md;}
+                        @include media(sm){width: $about-skill-logo-size-md; height: $about-skill-logo-size-md;}
+                        @include media(xs){width: $about-skill-logo-size-md; height: $about-skill-logo-size-md;}
+                    }
+                }
+            }
+
+            ul.social-menu{
+                @include space(0, 0);
+
+                li{
+                    @extend %btn-general-responsive;
+                    @include media(md){width: $about-social-ul-li-size-md; height: $about-social-ul-li-size-md;} 
+                    @include media(sm){display: block; width: $about-social-ul-li-size-sm; height: $about-social-ul-li-size-sm; margin: $about-social-ul-li-margin-sm;}
+                    @include media(xs){display: block; width: $about-social-ul-li-size-xs; height: $about-social-ul-li-size-xs; margin: $about-social-ul-li-margin-sm;}
+                    
+                    a{
+                        span{
+                            @include media(lg){font-size: $f-size-24;}
+                            @include media(md){font-size: $f-size-24;}
+                            @include media(sm){font-size: $f-size-22;}
+                            @include media(xs){font-size: $f-size-20;}
+                        }
+                    }
+                }
+            }
+        }
+
+        #portfolio{
+            @include media(md){height: auto;}
+            @include media(sm){height: auto;}
+            @include media(xs){height: auto;}
+           
+            .desktop{
+                @include media(md){display: none;}
+                @include media(sm){display: none;}
+                @include media(xs){display: none;}    
+                
+                .portfolio-content{
+                    span.float{
+                        h2{
+                            @include media(lg){font-size: $f-size-64;}
+                            @include media(md){font-size: $f-size-60;}
+                            @include media(sm){font-size: $f-size-54;}
+                            @include media(xs){font-size: $f-size-50;}
+                        }
+                    }
+                }
+            }
+        
+            .mobile{
+                @include media(md){display: block;}
+                @include media(sm){display: block;}
+                @include media(xs){display: block;}
+        
+                .header{
+                    .color{
+                        @extend %section-header-responsive;
+                    }
+                }
+        
+                figure{
+                    .btn{
+                        @include media(md){font-size: $f-size-20;}
+                        @include media(sm){font-size: $f-size-18;}
+                        @include media(xs){font-size: $f-size-16;}
+                    }
+                }
+        
+                .load-more__btn-wrap{
+                    .load-more__btn{
+                        @extend %btn-general-responsive;
+                        @include media(md){font-size: $f-size-16;}
+                        @include media(sm){font-size: $f-size-16;}
+                        @include media(xs){font-size: $f-size-14;}
+                    }
+                }
+            }
+        }
+
+        #recommendations{
+            @include media(md){min-height: $section-min-height;}
+            @include media(sm){min-height: $section-min-height;}
+            @include media(xs){min-height: $section-min-height;}
+
+            span.float{
+                h2{
+                    @extend %h6-responsive-font;
+                }
+            }
+
+            div.slider_one_big_picture{
+
+                .slide{
+
+                    .card{
+                        blockquote{
+                            @extend %p-responsive-style;
+                        }
+
+                        p{
+                            @extend %subtitle-responsive-style;
+                        }
+
+                        a{
+                            @extend %btn-general-responsive;
+                        }
+                    }
+                }
+            }
+
+            .nav_indicators{
+                ul{
+                    li{
+                        @include media(md){width: $recommendations-slider-indicators-ul-li-size-md !important; height: $recommendations-slider-indicators-ul-li-size-md !important; margin: $recommendations-slider-indicators-ul-li-margin-md !important;}
+                        @include media(sm){width: $recommendations-slider-indicators-ul-li-size-md !important; height: $recommendations-slider-indicators-ul-li-size-md !important; margin: $recommendations-slider-indicators-ul-li-margin-md !important;}
+                        @include media(xs){width: $recommendations-slider-indicators-ul-li-size-md !important; height: $recommendations-slider-indicators-ul-li-size-md !important; margin: $recommendations-slider-indicators-ul-li-margin-md !important;}
+                    }
+                }
+            }
+        }
+    }
+
+    #contact{
+        .content{
+            h2{
+                @extend %h4-responsive-font;
+            }
+
+            form{
+                @include media(sm){width: 100%;}
+                @include media(xs){width: 100%;}
+
+                label{
+                    @extend %subtitle-responsive-style;
+                }
+
+                input[type=text], input[type=email], textarea{
+                    @extend %p-responsive-style;
+                }
+
+                input[type=submit]{
+                    @extend %btn-general-responsive;
+                }
+            }
+
+            .contact-info{
+                p{
+                    @extend %p-responsive-style;
+                }
+
+                div{
+                    a{
+                        @extend %btn-general-responsive;
+
+                        @include media(md){font-size: $f-size-16; margin: $contact-info-btn-margin-md;}
+                        @include media(sm){font-size: $f-size-16; margin: $contact-info-btn-margin-md;}
+                        @include media(xs){font-size: $f-size-14; margin: $contact-info-btn-margin-md;}
+                    }
+                }
+            }
+        }
+    }
+}

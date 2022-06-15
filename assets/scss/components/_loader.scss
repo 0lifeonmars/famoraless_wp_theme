@@ -1,0 +1,79 @@
+body{
+    #loader{
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        @include flex(column, center, center);
+        @include space(0, 0);
+        @include size(100%, 100vh);
+        background-color: $color-black;
+        z-index: 9999;
+
+        h2{
+            @include space($loader-h2-margin, 0);
+            @include font($f-name-kanit, $f-size-20, $color-white, $f-weight-bold, normal);
+            text-transform: uppercase;
+        }
+
+        .spinner{
+            position: relative;
+            @include size($loader-spiner-size,  $loader-spiner-size);
+            perspective: $loader-spiner-perspective;
+            -webkit-perspective: $loader-spiner-perspective;
+            -moz-perspective: $loader-spiner-perspective;
+            -o-perspective: $loader-spiner-perspective;
+
+            div{
+                position: absolute;
+                @include size(100%, 100%);
+                background-color: $color-blue;
+                 
+                left: 50%;
+                -webkit-transform-origin: left;
+                -moz-transform-origin: left;
+                -o-transform-origin: left;
+                transform-origin: left;
+                -webkit-animation: LoadingSpinerEffect 2s infinite;
+                -moz-animation: LoadingSpinerEffect 2s infinite;
+                -o-animation: LoadingSpinerEffect 2s infinite;
+                animation: LoadingSpinerEffect 2s infinite;
+
+                &:nth-child(1) {
+                    -webkit-animation-delay: 0.18s;
+                    -moz-animation-delay: 0.18s;
+                    -o-animation-delay: 0.18s;
+                    animation-delay: 0.18s;
+                }
+                  
+                &:nth-child(2) {
+                    -webkit-animation-delay: 0.36s;
+                    -moz-animation-delay: 0.36s;
+                    -o-animation-delay: 0.36s;
+                    animation-delay: 0.36s;
+                }
+                  
+                &:nth-child(3) {
+                    -webkit-animation-delay: 0.54s;
+                    -moz-animation-delay: 0.54s;
+                    -o-animation-delay: 0.54s;
+                    animation-delay: 0.54s;
+                }
+                  
+                &:nth-child(4) {
+                    -webkit-animation-delay: 0.72s;
+                    -moz-animation-delay: 0.72s;
+                    -o-animation-delay: 0.72s;
+                    animation-delay: 0.72s;
+                }
+                  
+                &:nth-child(5) {
+                    -webkit-animation-delay: 0.8999999999999999s;
+                    -moz-animation-delay: 0.8999999999999999s;
+                    -o-animation-delay: 0.8999999999999999s;
+                    animation-delay: 0.8999999999999999s;
+                }
+            }
+        }  
+    }
+}

@@ -1,0 +1,32 @@
+body{
+
+    footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        @include flex(column, center, center);
+        background-color: $color-black;
+        @include space(0, 0);
+        @include size(100%, $footer-height);
+        @include border(solid, $footer-border, $color-blue);
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        z-index: 1000;
+
+        p{
+            @include font($f-name-kanit, $f-size-14, $color-white, $f-weight-bold, normal);
+            text-transform: uppercase;
+            width: 100%;
+        }
+
+        p.left{
+            text-align: left;
+        }
+
+        p.right{
+            text-align: right;
+        }
+    }
+}

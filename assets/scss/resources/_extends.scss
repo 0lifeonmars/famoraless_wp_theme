@@ -1,0 +1,366 @@
+/* TITLES STYLE */
+%h1-style{ 
+    font-family: $f-name-kanit;
+    font-size: $f-size-54;
+    font-weight: $f-weight-black;
+    font-style: normal;
+}
+
+%h2-style{
+    font-family: $f-name-kanit;
+    font-size: $f-size-48;
+    font-weight: $f-weight-extrabold;
+    font-style: normal;
+}
+
+%h3-style{
+    font-family: $f-name-kanit;
+    font-size: $f-size-42;
+    font-weight: $f-weight-extrabold;
+    font-style: normal;
+}
+
+%h4-style{
+    font-family: $f-name-kanit;
+    font-size: $f-size-40;
+    font-weight: $f-weight-bold;
+    font-style: normal;
+}
+
+%h5-style{
+    font-family: $f-name-kanit;
+    font-size: $f-size-36;
+    font-weight: $f-weight-bold;
+    font-style: normal;
+}
+
+%h6-style{
+    font-family: $f-name-kanit;
+    font-size: $f-size-32;
+    font-weight: $f-weight-bold;
+    font-style: normal;
+}
+
+/* TITLES RESPONSIVE STYLE */
+%h1-responsive-font{
+    @include media(lg){font-size: $f-size-52;}
+    @include media(md){font-size: $f-size-50;}
+    @include media(sm){font-size: $f-size-48;}
+    @include media(xs){font-size: $f-size-46;}
+}
+
+%h2-responsive-font{
+    @include media(lg){font-size: $f-size-46;}
+    @include media(md){font-size: $f-size-44;}
+    @include media(sm){font-size: $f-size-42;}
+    @include media(xs){font-size: $f-size-40;}
+}
+
+%h3-responsive-font{
+    @include media(lg){font-size: $f-size-40;}
+    @include media(md){font-size: $f-size-38;}
+    @include media(sm){font-size: $f-size-36;}
+    @include media(xs){font-size: $f-size-34;}
+}
+
+%h4-responsive-font{
+    @include media(lg){font-size: $f-size-38;}
+    @include media(md){font-size: $f-size-36;}
+    @include media(sm){font-size: $f-size-34;}
+    @include media(xs){font-size: $f-size-32;}
+}
+
+%h5-responsive-font{
+    @include media(lg){font-size: $f-size-34;}
+    @include media(md){font-size: $f-size-32;}
+    @include media(sm){font-size: $f-size-30;}
+    @include media(xs){font-size: $f-size-28;}
+}
+
+%h6-responsive-font{
+    @include media(lg){font-size: $f-size-30;}
+    @include media(md){font-size: $f-size-28;}
+    @include media(sm){font-size: $f-size-26;}
+    @include media(xs){font-size: $f-size-24;}
+}
+
+%subtitle-style{
+    font-family: $f-name-kanit;
+    font-size: $f-size-20;
+    font-weight: $f-weight-bold;
+    font-style: normal;
+}
+
+%subtitle-responsive-style{
+    @include media(md){font-size: $f-size-18;}
+    @include media(sm){font-size: $f-size-18;}
+    @include media(xs){font-size: $f-size-16;}
+}
+
+/* TEXTS STYLE */
+%p-style{
+    font-family: $f-name-worksans;
+    font-size: $f-size-16;
+    font-weight: $f-weight-medium;
+    font-style: normal;
+    line-height: 24px;
+}
+
+/* TEXTS RESPONSIVE STYLE */
+%p-responsive-style{
+    @include media(sm){font-size: $f-size-14;}
+    @include media(xs){font-size: $f-size-14;}
+}
+
+/*BUTTONS OUTLINE & FILL STYLE */
+%btn-general-style{
+    position: relative;
+    display: inline-block;
+    padding: $button-padding;
+    border-radius: $button-radius;
+    -webkit-border-radius: $button-radius;
+    -moz-border-radius: $button-radius;
+    -ms-border-radius: $button-radius;
+    -o-border-radius: $button-radius;
+    height: auto;
+    min-width: $button-width;
+    font-family: $f-name-kanit;
+    font-weight: $f-weight-medium;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: $button-textshadow;
+    outline: none;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    cursor: pointer;
+    
+    &:hover{
+        top: $button-hover-top;
+    }
+
+    &:active{
+        top: $button-active-top;
+    }
+    
+}
+
+%btn-general-responsive{
+    @include media(sm){width: 100%;}
+    @include media(xs){width: 100%;}
+}
+
+%btn-fill-style{
+    @include border(solid, $button-border, transparent);
+}
+
+%btn-outline-style{
+    border-style: solid;
+    border-width: $button-border;
+    background-color: transparent;
+}
+
+%modal-btn-close{
+    padding: $nav-btn-close-padding;
+    border: none;
+    border-radius: $nav-btn-close-radius;
+    -webkit-border-radius: $nav-btn-close-radius;
+    -moz-border-radius: $nav-btn-close-radius;
+    -ms-border-radius: $nav-btn-close-radius;
+    -o-border-radius: $nav-btn-close-radius;
+    font-family: $f-name-kanit;
+    font-size: $f-size-18;
+    font-weight: $f-weight-semibold;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: $nav-btn-close-letter;
+    cursor: pointer;
+}
+/* SECTION HEADER*/
+%section-header-style{
+    @include space(0, 0);
+    @include background(center center, no-repeat, cover);
+    background-attachment: fixed;
+    @include size(100%, 90vh);
+    min-height: $section-header-height;
+
+    .color{
+        display: flex;
+        @include flex(column, center, center);
+        @include space(0, $section-header-content-margin);
+        @include size(100%, 100%);
+        background: linear-gradient(270deg, rgba(48, 5, 96, 0.6), rgba(99, 39, 167, 0.6) , rgba(77, 8, 154, 0.6), rgba(122, 70, 179, 0.6), rgba(39, 4, 77, 0.6));
+        background-size: 600% 600%;
+    }
+
+    h2{
+        @include space(0, 0);
+        @include font($f-name-bangers, $f-size-60, $color-white, $f-weight-regular, normal);
+        text-align: center; 
+        text-transform: uppercase;
+        text-shadow: $section-header-h2-textshadow;
+    }
+
+    img.scrolldown{
+        display: block;
+        @include space($section-header-btn-margin-xl, 0);
+        @include size($section-header-btn-size-xl, $section-header-btn-size-xl);;
+        cursor: pointer;
+    }
+}
+
+%section-header-responsive{
+    h2{
+        @include media(lg){font-size: $f-size-50;}
+        @include media(md){font-size: $f-size-50;}
+        @include media(sm){font-size: $f-size-40;}
+        @include media(xs){font-size: $f-size-40;}
+        
+    }
+
+    img.scrolldown{
+        @include media(md){width: $section-header-btn-size-md; height: $section-header-btn-size-md; margin: $section-header-btn-margin-md;}
+        @include media(sm){width: $section-header-btn-size-md; height: $section-header-btn-size-md; margin: $section-header-btn-margin-md;}
+        @include media(xs){width: $section-header-btn-size-md; height: $section-header-btn-size-md; margin: $section-header-btn-margin-md;}     
+    }
+}
+
+/* CARDS STYLE */
+%card{
+    background: linear-gradient(270deg, #91962B, #E8F044, #EEF473);
+    background-size: 600% 600%;
+    animation: bgAboutHeader 6000ms ease infinite;
+    -webkit-animation: bgAboutHeader 6000ms ease infinite;
+    box-shadow: $card-boxshadow;
+    -webkit-box-shadow: $card-boxshadow;
+    border-radius: $card-radius;
+    -webkit-border-radius: $card-radius;
+    -moz-border-radius: $card-radius;
+    -ms-border-radius: $card-radius;
+    -o-border-radius: $card-radius;
+        
+    .content{
+        border-style: solid;
+        border-width: $card-content-border;
+        border-radius: $card-content-radius;
+        -webkit-border-radius: $card-content-radius;
+        -moz-border-radius: $card-content-radius;
+        -ms-border-radius: $card-content-radius;
+        -o-border-radius: $card-content-radius;
+    }
+}
+
+/* PROFILE */
+%profile-title-style{
+    background: linear-gradient(270deg, $color-shadow-blue-03, $color-tone-blue-01 , $color-blue, $color-tone-blue-02, $color-shadow-blue-04);
+    background-size: 600% 600%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: $profile-txt-letter;
+    text-shadow: $profile-txt-shadow;
+}
+
+/* PORTFOLIO */
+%portfolio-figure-style{
+    position: relative;
+    height: 100%;
+    max-height: $portfolio-figure-height;
+    cursor: pointer;
+
+    img.thumbnail{
+        display: block;
+        object-fit: cover;
+        @include space(0, 0);
+        @include size(100%, 100%);
+    }
+
+    figcaption{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        @include flex(column, center, center);
+        @include space(0, 0);
+        background-color: $color-trans-black-8;
+        @include size(100%, 100%);
+        color: $color-white;
+    }
+}
+
+/* RECOMMENDATIONS */
+%recommentions-back{
+    background: $color-trans-black-8;
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/* CSS EFFECTS */
+%bounceInDown-effect {
+    animation: bounceInDown 2500ms ease 5000ms both;
+    -webkit-animation: bounceInDown 2500ms ease 5000ms both;
+}
+
+%bounceInUp-effect {
+    animation: bounceInUp 2500ms ease 5000ms both;
+    -webkit-animation: bounceInUp 2500ms ease 5000ms both;
+}
+
+%titlesProfile-Effect{
+    animation: bgAboutHeader 6000ms ease infinite, bounceInDown 2500ms ease 5000ms both;
+    -webkit-animation: bgAboutHeader 6000ms ease infinite, bounceInDown 2500ms ease 5000ms both;
+}
+
+%bgAnimated-effect{
+    animation: bgAboutHeader 6000ms ease infinite;
+    -webkit-animation: bgAboutHeader 6000ms ease infinite;
+}
+
+%navmenuactivebg-effect{
+    animation: navMenuActiveBg 2500ms ease 0.1s both;
+    -webkit-animation: navMenuActiveBg 2500ms ease 0.1s both;
+}
+
+%flipInY-effect{
+    animation:  flipInY 2000ms linear 4500ms 1 normal both;
+    -webkit-animation:  flipInY 2000ms linear 4500ms 1 normal both;
+}
+
+%scrollDown-effect{
+    animation: scrollDown 700ms cubic-bezier(0.32, 0, 0.67, 0) 0s infinite normal forwards;
+    -webkit-animation: scrollDown 700ms cubic-bezier(0.32, 0, 0.67, 0) 0s infinite normal forwards;
+}
+
+%headerArrow-effect{
+    animation: headerArrow 1250ms cubic-bezier(0.32, 0, 0.67, 0) 0s infinite normal forwards;
+    -webkit-animation: headerArrow 1250ms cubic-bezier(0.32, 0, 0.67, 0) 0s infinite normal forwards;
+}
+
+%scale-transform-effect{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+%transition-250ms{
+    transition: all 250ms 0.1s ease-out;
+    -webkit-transition: all 250ms 0.1s ease-out;
+    -moz-transition: all 250ms 0.1s ease-out;
+    -ms-transition: all 250ms 0.1s ease-out;
+    -o-transition: all 250ms 0.1s ease-out;
+}
+
+%ModalfadeIn-effect{
+    animation:  modalFadeIn 250ms linear 0.1s 1 normal both;
+    -webkit-animation:  modalFadeIn 250ms linear 0.1s 1 normal both;
+}

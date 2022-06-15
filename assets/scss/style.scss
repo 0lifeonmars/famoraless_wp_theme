@@ -1,0 +1,18 @@
+@import './resources/colors';
+@import './resources/fonts';
+@import './resources/variables';
+@import './resources/mixins';
+@import './resources/extends';
+
+@import './components/body';
+@import './components/header';
+@import './components/navbar';
+@import './components/footer';
+@import './components/loader';
+@import './components/modals';
+
+@import './pages/profile';
+@import './pages/about';
+@import './pages/portfolio';
+@import './pages/recommendations';
+@import './pages/contact';

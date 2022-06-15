@@ -1,0 +1,146 @@
+body{
+    #alert{
+        .error, .true{
+            p{
+                @extend %p-responsive-style;
+                @include media(md){text-align: center; width: 100%;}
+                @include media(sm){text-align: center; width: 100%;}
+                @include media(xs){text-align: center; width: 100%;}
+            }
+        }
+    }
+
+    nav{
+        .pushy-content {
+            ul{
+                li{
+                    a{
+                        @include media(lg){font-size: $f-size-16;}
+                        @include media(md){font-size: $f-size-16;}
+                        @include media(sm){font-size: $f-size-16;}
+                        @include media(xs){font-size: $f-size-14;}
+
+                        span{
+                            @include media(lg){font-size: $f-size-20;}
+                            @include media(md){font-size: $f-size-20;}
+                            @include media(sm){font-size: $f-size-20;}
+                            @include media(xs){font-size: $f-size-18;}
+                        }
+                    }
+                }
+            }
+        }	
+        
+
+        .pushy-social{
+            ul{
+                li{
+                    a{
+                        span{
+                            @include media(md){font-size: $f-size-16;}
+                            @include media(sm){font-size: $f-size-16;}
+                            @include media(xs){font-size: $f-size-14;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    header{
+        h1{
+            @include media(md){font-size: $f-size-22; align-items: flex-end;}
+            @include media(sm){font-size: $f-size-22; align-items: flex-end;}
+            @include media(xs){font-size: $f-size-20; align-items: flex-end;}
+        }
+
+        div{
+
+            button.menu-btn{
+                span{
+                    @include media(sm){font-size: $f-size-22;}
+                    @include media(xs){font-size: $f-size-22;}
+                }
+                
+            }
+
+            ul.social-media{
+                @include media(md){display: none;}
+                @include media(sm){display: none;}
+                @include media(xs){display: none;}
+
+                li{
+                    a{
+                        span{
+                            @include media(md){font-size: $f-size-16;}
+                            @include media(sm){font-size: $f-size-16;}
+                            @include media(xs){font-size: $f-size-16;}
+                        }
+                    }
+                }
+            }
+        } 
+    }
+
+    footer{
+        p{
+            @include media(sm){font-size: $f-size-12};
+            @include media(xs){font-size: $f-size-12};
+        }
+
+        p.left, p.right{
+            @include media(md){text-align: center;}
+            @include media(sm){text-align: center;}
+            @include media(xs){text-align: center;}
+        }
+
+        p.right{
+            @include media(md){margin: $footer-p-margin-md;}
+            @include media(sm){margin: $footer-p-margin-md;}
+            @include media(xs){margin: $footer-p-margin-md;}
+
+        }
+    }
+
+    .modal{
+        .modal-content{
+            .header{
+                .color{
+                    h2{
+                        @extend %h6-responsive-font;
+                    }
+                }
+            }
+
+            p{
+                @extend %p-responsive-style;
+            }
+
+            .description{
+                p {
+                    @include media(lg){font-size: $f-size-18;}
+                    @include media(md){font-size: $f-size-16;}
+                    @include media(sm){font-size: $f-size-16;}
+                    @include media(xs){font-size: $f-size-14;}
+                }
+            }
+
+            .modal-card{
+                h3{
+                    @extend %subtitle-responsive-style;
+                }
+            }
+
+            .btn{
+                @extend %btn-general-responsive;
+                @include media(sm){font-size: $f-size-14;}
+                @include media(xs){font-size: $f-size-14;}
+
+                span{
+                    @include media(sm){font-size: $f-size-16;}
+                    @include media(xs){font-size: $f-size-16;}
+                }
+            }
+        }
+    }
+}

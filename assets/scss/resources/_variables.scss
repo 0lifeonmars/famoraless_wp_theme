@@ -1,0 +1,229 @@
+/* IMAGES URL */
+$bg-image-recommendations: url('../../images/backs/bg_recommendations_header.png');
+$bg-image-portfolio: url('../../images/backs/bg_portfolio_header.png');
+$bg-image-about: url('../../images/backs/bg_about_header.png');
+$bg-image-modal: url('../../images/backs/bg_modal_header.png');
+
+/* LOADER PX VARIABLES */
+$loader-h2-margin: 45px 0 0 0;
+$loader-spiner-size: 53px;
+$loader-spiner-perspective: 106px;
+$scrollbar-width: 10px;
+
+/* ALERTS PX VARIABLES */
+$alert-padding: 18px 20px 18px 20px;
+$alert-border: 2px;
+$alert-radius: 16px;
+$alert-height: 120px;
+$alert-icon-size: 64px;
+
+
+/* HEADER PX VARIABLES */
+$header-border-size: 2px;
+$header-height: 50px;
+$header-button-margin: 0 10px 0 10px;
+$header-h1-letter: 1px;
+$header-social-ul-li-a-margin: 0 14px 0 14px;
+$header-arrow-top: 15px;
+$header-arrow-left-xl: 65px;
+$header-arrow-left-lg: 45px;
+$header-arrow-width: 37px;
+$header-arrow-height: 18px;
+
+
+/* NAV PX VARIABLES */
+$nav-padding: 45px 0 0 0;
+$nav-border: 2px;
+$nav-btn-close-top: 15px;
+$nav-btn-close-right: 25px;
+$nav-btn-close-padding: 2px 4.5px 2 4.5px;
+$nav-btn-close-radius: 10px;
+$nav-btn-close-letter: 0.5px;
+$nav-menu-ul-li-margin: 0 0 5px 0;
+$nav-menu-ul-li-padding: 12px 0 12px 12px;
+$nav-menu-ul-li-a-letter: 1px;
+$nav-menu-ul-li-a-span-margin: 0 12px 0 0;
+$nav-menu-social-padding: 10px 22px 10px 22px;
+$nav-menu-social-ul-height: 50px;
+$nav-menu-social-ul-li-a-padding: 10px;
+
+
+/* FOOTER PX VARIABLES */
+$footer-height: 50px;
+$footer-border: 2px;
+$footer-p-margin-md: 4px 0 0 0;
+
+
+/* BUTTONS PX VARIABLES */
+$button-width: 130px;
+$button-padding: 10px 12px;
+$button-textshadow: 1.5px 1.5px 1.5px #000;
+$button-hover-top: 1px;
+$button-active-top: 5px;
+$button-radius: 16px;
+$button-border: 2px;
+
+
+/* CARDS PX VARIABLES */
+$card-boxshadow: 2px 2px 5px 1px #000;
+$card-radius: 16px;
+$card-content-border: 1px;
+$card-content-radius: 12px;
+
+
+/* #PROFILE PX VARIABLES */
+$profile-txt-margin: 0 0 20px 0;
+$profile-txt-padding: 10px 26px 10px 26px;
+$profile-txt-border: 2px;
+$profile-txt-letter: 1px;
+$profile-txt-shadow: 2px 2px 2px #000;
+$profile-info-padding: 50px 5% 50px 5%;
+$profile-info-btn-margin-xl: 0 18px 18px 0;
+$profile-info-btn-margin-sm: 0 0 18px 0;
+$profile-info-btn-normal-boxshadow: 0 5px #DC2ADE;
+$profile-info-btn-hover-boxshadow: 0 3px #DC2ADE;
+
+
+/* SECTION GENERAL PX VARIABLES*/
+$section-padding: 50px 0 50px 0;
+$section-header-height: 350px;
+$section-header-content-margin: 20px 5% 20px 5%;
+$section-header-h2-textshadow: 2px 20px 5px #000;
+$section-header-btn-margin-xl: 45px auto 0 auto;
+$section-header-btn-margin-md: 20px auto 0 auto;
+$section-header-btn-size-xl: 50px;
+$section-header-btn-size-md: 25px;
+$section-min-height: 500px;
+
+
+/* FLIPCARD PX VARIABLES*/
+$flipcard-height: 180px;
+$flipcard-perspective: 1000px;
+
+
+/* #ABOUT PX VARIABLES*/
+$about-profile-img-margin: 0 auto 45px auto;
+$about-profile-img-size-xl: 260px;
+$about-profile-img-size-md: 240px;
+$about-profile-img-size-sm: 180px;
+$about-profile-img-border: 4px;
+$about-profile-img-shadow: 0px 0px 15px 2px #000000;
+$about-subtitle-shadow: 3px 3px 2px #000;
+$about-hr-margin: 20px auto 45px auto;
+$about-hr-height: 3px;
+$about-hr-shadow: 1px 1px 1px #000;
+$about-text-margin: 0 0 12px 0;
+$about-avatar-01-width: 175px;
+$about-avatar-01-height: 209px;
+$about-avatar-02-width: 175px;
+$about-avatar-02-height: 280px;
+$about-card-padding: 4px;
+$about-card-content-padding: 24px 13px 18px 13px;
+$about-strengths-icon-margin: 0 auto 30px auto;
+$about-strengths-icon-size: 64px;
+$about-strengths-title-margin: 0 0 12px 0;
+$about-skill-logo-size-xl: 128px;
+$about-skill-logo-size-md: 64px;
+$about-skill-title-margin: 0 0 10px 0;
+$about-skill-shadow: 2px 2px 0px #000;
+$about-skill-percent-padding: 2px;
+$about-skill-percent-height: 20px;
+$about-skill-percent-radius: 12px;
+$about-skill-text-margin: 10px 0 0 0;
+$about-skill-icon-margin: 0 20px 0 0;
+$about-skill-icon-size: 64px;
+$about-social-ul-li-margin-xl: 0 30px 0 0;
+$about-social-ul-li-margin-sm: 0 0 20px 0;
+$about-social-ul-li-size-xl: 80px;
+$about-social-ul-li-size-md: 70px;
+$about-social-ul-li-size-sm: 60px;
+$about-social-ul-li-size-xs: 50px;
+$about-social-ul-li-btn-normal-shadow: 0 5px #AAA;
+$about-social-ul-li-btn-hover-shadow: 0 3px #AAA;
+$about-social-ul-li-btn-padding: 12px;
+
+
+
+/* #PORTFOLIO PX VARIABLES */
+$portfolio-card-padding: 4px;
+$portfolio-desktop-h2-margin: 42px 0 0 0;
+$portfolio-desktop-slider-shadow: 2px 2px 2px #000;
+$portfolio-desktop-slider-width: 1200px;
+$portfolio-desktop-slider-height: 300px;
+$portfolio-card-btn-normal-shadow: 0 5px #191F6E;
+$portfolio-card-btn-hover-shadow: 0 3px #191F6E;
+$portfolio-btn-wrap-margin: 20px;
+$portfolio-btn-load-normal-shadow: 0 5px #CBD23C;
+$portfolio-btn-load-hover-shadow: 0 3px #CBD23C;
+$portfolio-figure-height: 300px;
+
+
+/* #RECOMMENDATIONS PX VARIABLES */
+$recommendations-float-margin: 12px 0 0 0;
+$recommendations-float-h2-padding: 12px;
+$recommendations-card-padding: 18px 22px 18px 22px;
+$recommendations-card-a-margin: 16px auto 0 auto;
+$recommendations-card-a-width: 130px;
+$recommendations-card-a-normal-shadow: 0 5px #323EDD;
+$recommendations-card-a-hover-shadow: 0 3px #323EDD;
+$recommendations-slider-slide-height: 200px;
+$recommendations-slider-slide-blockquote-margin: 0 0 12px 0;
+$recommendations-slider-slide-img-border: 4px;
+$recommendations-slider-slide-img-size: 150px;
+$recommendations-slider-indicators-bottom: 18px;
+$recommendations-slider-indicators-ul-padding: 6px 12px 6px 12px;
+$recommendations-slider-indicators-ul-li-margin-xl: 12px;
+$recommendations-slider-indicators-ul-li-margin-md: 6px;
+$recommendations-slider-indicators-ul-li-border: 2px;
+$recommendations-slider-indicators-ul-li-size-xl: 16px;
+$recommendations-slider-indicators-ul-li-size-md: 10px;
+
+
+/* #CONTACT PX VARIABLES */
+$contact-padding: 50px 10% 50px 10%;
+$contact-radius: 10px;
+$contact-shadow: 2px 2px 2px #000;
+$contact-content-padding: 30px 5% 30px 5%;
+$contact-content-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+$contact-content-blur: 12.1px;
+$contact-content-h2-margin: 0 0 16px 0;
+$contact-content-form-error-margin: 0 0 18px 0;
+$contact-content-form-label-margin: 0 0 14px 10px;
+$contact-content-form-input-margin: 0 0 20px 0;
+$contact-content-form-input-padding: 8px 10px 8px 10px;
+$contact-content-form-input-border: 2px;
+$contact-content-form-input-height: 50px;
+$contact-content-form-textarea-height: 150px;
+$content-contact-form-btn-normal-boxshadow: 0 5px #191F6E;
+$content-contact-form-btn-hover-boxshadow: 0 3px #191F6E;
+$contact-info-img-margin: 0 auto 18px auto;
+$contact-info-img-width: 211px;
+$contact-info-img-height: 219px;
+$contact-info-p-margin: 0 0 18px 0;
+$contact-info-btn-margin-xl: 0 10px 0 0;
+$contact-info-btn-margin-md: 0 0 10px 0;
+$contact-info-btn-normal-shadow: 0 5px #891A8B;
+$contact-info-btn-hover-shadow: 0 3px #891A8B;
+
+
+/* MODALS PX VARIABLES */
+$modal-padding: 60px 10% 60px 10%;
+$modal-btn-close-top: 20px;
+$modal-content-margin: 20px 0 20px 0;
+$modal-content-radius: 10px;
+$modal-content-header-height: 250px;
+$modal-content-header-color-margin: 15px 5% 15px 5%;
+$modal-content-shadow: 2px 2px 2px #000;
+$modal-card-height: 250px;
+$modal-card-h3-margin: 0 0 6px 0;
+$modal-card-p-margin: 0 0 18px 0;
+$modal-card-ul-margin: 18px 0 0 0;
+$modal-card-ul-li-margin: 0 8px 8px 0;
+$modal-card-ul-li-p-padding: 4px 8px 4px 8px;
+$modal-card-yellow-h3-margin: 0 0 12px 0;
+$modal-btn-general-margin: 0 0 12px 0;
+$modal-btn-general-normal-shadow: 0 5px #000;
+$modal-btn-general-hover-shadow: 0 3px #000;
+$modal-btn-general-width: 153px;
+$modal-btn-general-span-margin: 0 4px 0 0;
+$modal-img-mockup-width: 900px;

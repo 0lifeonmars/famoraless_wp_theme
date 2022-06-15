@@ -1,0 +1,223 @@
+body{
+    main{
+        #portfolio{
+            @include space(0, $section-padding);
+            height: 100vh;
+
+            .card{
+                @include space(0, $portfolio-card-padding);
+                @include size(100%, 100%);
+                border-radius: 0 !important;
+                -webkit-border-radius: 0 !important;
+                -moz-border-radius: 0 !important;
+                -ms-border-radius: 0 !important;
+                -o-border-radius: 0 !important;
+                @extend %card;
+
+                .content{
+                    @include space(0, 0);
+                    @include size(100%, 100%);
+                    border-radius: 0 !important;
+                    -webkit-border-radius: 0 !important;
+                    -moz-border-radius: 0 !important;
+                    -ms-border-radius: 0 !important;
+                    -o-border-radius: 0 !important;
+                }
+            }
+        
+            .desktop{
+                display: block;
+                position: relative;
+                @include size(100%, 100%);
+                max-height: 100vh;
+                overflow: hidden;
+                
+                video{
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 0;
+                    @include min-size(100%, 100vh);
+                }
+
+                .portfolio-content{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include space(0, 0);
+                    @include size(100%, 100vh);
+                    background-color: $color-trans-black-8;
+                    z-index: 2;
+
+                    span.float{
+                        position: absolute; 
+                        top: 0; 
+                        display: flex;
+                        @include flex(column, center, center);
+                        width: 100%;
+                        z-index: 2;
+                
+                        h2{
+                            @include space($portfolio-desktop-h2-margin, $profile-txt-padding);
+                            @include border(solid, $profile-txt-border, $color-blue);
+                            @include font($f-name-bangers, $f-size-60, $color-white, $f-weight-regular, normal);
+                            text-transform: capitalize;
+                            @extend %profile-title-style;
+                            @extend %bgAnimated-effect;
+                        }
+                    }
+                
+                    div.slider_circle_10>*{
+                        background-color: transparent !important;
+                        box-shadow: $portfolio-desktop-slider-shadow;
+                        max-height: $portfolio-desktop-slider-height; 
+                    }
+                
+                    div.slider_circle_10{
+                        @include size(100% !important, 90vh !important);
+                        max-width: $portfolio-desktop-slider-width;
+
+                        div.slide{
+                            figure{
+                                @extend %portfolio-figure-style;    
+                            }
+                        }
+
+                        .btn{
+                            @extend %btn-general-style;
+                            @extend %btn-fill-style;
+                            border: none !important;
+                            color: $color-white;
+                            min-width: auto !important;
+                            font-size: $f-size-20;
+                            background-color: $color-blue !important;
+                            box-shadow: $portfolio-card-btn-normal-shadow;
+                            -webkit-box-shadow: $portfolio-card-btn-normal-shadow;
+                            
+                            &:hover{
+                                box-shadow: $portfolio-card-btn-hover-shadow;
+                                -webkit-box-shadow: $portfolio-card-btn-hover-shadow;
+                            }
+                
+                            &:active{
+                                box-shadow: 0 0 #191F6E;
+                                -webkit-box-shadow: 0 0 #191F6E;
+                            }
+                        }
+                
+                        div.active{
+                            figure{
+                                &:hover{
+                                    figcaption{
+                                        display: flex;
+                                    }
+                                }
+                            }
+                        }
+                
+                        button[type=button].next_button, button[type=button].prev_button {
+                            opacity: 1 !important;
+                        }
+                    
+                        button[type=button].next_button{
+                            &:after{
+                                border-left-color: $color-white !important;
+                            }
+                        }
+                    
+                        button[type=button].prev_button{
+                            &:after{
+                                border-right-color: $color-white !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .mobile{
+                display: none;
+                background-color: $color-shadow-pink-06;
+
+                .header{
+                    background-image: $bg-image-portfolio;
+                    @extend %section-header-style;
+                    
+                    .color{
+                        @extend %bgAnimated-effect;
+
+                        h2{
+                            @extend %flipInY-effect;
+                        }
+
+                        img.scrolldown{
+                            @extend %scrollDown-effect;
+                        }
+                    }
+                }
+
+                figure{
+                    @extend %portfolio-figure-style;
+
+                    &:hover{
+                        figcaption{
+                            display: flex;
+                        }
+                    }
+
+                    .btn{
+                        @extend %btn-general-style;
+                        @extend %btn-fill-style;
+                        border: none;
+                        color: $color-white;
+                        min-width: auto !important;
+                        font-size: $f-size-20;
+                        background-color: $color-blue;
+                        box-shadow:$portfolio-card-btn-normal-shadow;
+                        -webkit-box-shadow: $portfolio-card-btn-normal-shadow;
+                        
+                        &:hover{
+                            box-shadow: $portfolio-card-btn-hover-shadow;
+                            -webkit-box-shadow: $portfolio-card-btn-hover-shadow;
+                        }
+            
+                        &:active{
+                            box-shadow: 0 0 #191F6E;
+                            -webkit-box-shadow: 0 0 #191F6E;
+                        }
+                        
+                        
+                    }
+                }
+
+                .load-more__btn-wrap{
+                    width: 100%; 
+                    margin-bottom: $portfolio-btn-wrap-margin;
+
+                    .load-more__btn{
+                        @extend %btn-general-style;
+                        @extend %btn-outline-style;
+                        color: $color-white;
+                        font-size: $f-size-18;
+                        border-color: $color-yellow;
+                        box-shadow: $portfolio-btn-load-normal-shadow;
+                        -webkit-box-shadow: $portfolio-btn-load-normal-shadow;
+                        display: block;
+                        margin: 0 auto 0 auto;
+                        
+                        &:hover{
+                            box-shadow: $portfolio-btn-load-hover-shadow;
+                            -webkit-box-shadow: $portfolio-btn-load-hover-shadow;
+                        }
+
+                        &:active{
+                            box-shadow: 0 0 #CBD23C;
+                            -webkit-box-shadow: 0 0 #CBD23C;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

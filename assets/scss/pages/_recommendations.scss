@@ -1,0 +1,140 @@
+body{
+    main{
+        #recommendations{
+            @include space(0, $section-padding);
+            height: 100vh;
+            background-image: $bg-image-recommendations;
+            @include background(center center, no-repeat, cover);
+
+            @include media(md){min-height: $section-min-height;}
+            @include media(sm){min-height: $section-min-height;}
+            @include media(xs){min-height: $section-min-height;}
+
+            span.float{
+                position: absolute;
+                top: 0;
+                @include space($recommendations-float-margin, 0);
+                display: flex;
+                @include flex(column, center, center);
+                width: 100%;
+                z-index: 2;
+        
+                h2{
+                    @include space(0, $recommendations-float-h2-padding);
+                    text-transform: uppercase;
+                    color: $color-white;
+                    @extend %h6-style;
+                    @extend %h6-responsive-font;
+                    @extend %recommentions-back;
+                }
+            }
+
+            div.slider_one_big_picture{
+                height: 100%;
+                padding: $section-padding !important;
+
+                .slide{
+                    display: flex;
+                    @include flex(column, center, center);
+
+                    .card{
+                        @include space(0, $recommendations-card-padding);
+                        width: 100%;
+                        min-height: $recommendations-slider-slide-height;
+                        @extend %recommentions-back;
+
+
+                        blockquote{
+                            @include space($recommendations-slider-slide-blockquote-margin, 0);
+                            color: $color-white;
+                            text-align: center;
+
+                            @extend %p-style;
+                            @extend %p-responsive-style;
+                        }
+
+                        p{
+                            @include space(0, 0);
+                            color: $color-white;
+                            text-align: center;
+
+                            @extend %subtitle-style;
+                            @extend %subtitle-responsive-style;
+                        }
+
+                        a{
+                            margin: $recommendations-card-a-margin;
+                            max-width: $recommendations-card-a-width;
+                            color: $color-white;
+                            font-size: $f-size-16;
+                            border-color: $color-blue;
+                            box-shadow: $recommendations-card-a-normal-shadow;
+                            -webkit-box-shadow: $recommendations-card-a-normal-shadow;
+                            @extend %btn-general-style;
+                            @extend %btn-outline-style;
+                            @extend %btn-general-responsive;
+                            
+                            &:hover{
+                                box-shadow:  $recommendations-card-a-hover-shadow;
+                                -webkit-box-shadow:  $recommendations-card-a-hover-shadow;
+                            }
+                
+                            &:active{
+                                box-shadow: 0 0 #323EDD;
+                                -webkit-box-shadow: 0 0 #323EDD;
+                            }
+                        }
+                    }
+
+                    img{
+                        position: initial !important;
+                        object-fit: cover;
+                        @include border(solid, $recommendations-slider-slide-img-border, $color-blue);
+                        @include max-size($recommendations-slider-slide-img-size !important, $recommendations-slider-slide-img-size !important);
+                        @include size($recommendations-slider-slide-img-size !important, $recommendations-slider-slide-img-size !important);
+                        @include min-size($recommendations-slider-slide-img-size !important, $recommendations-slider-slide-img-size !important);
+                        border-radius: 100%;
+                        -webkit-border-radius: 100%;
+                        -moz-border-radius: 100%;
+                        -ms-border-radius: 100%;
+                        -o-border-radius: 100%;
+                    }
+                }
+            }
+
+            .nav_indicators{
+                bottom: $recommendations-slider-indicators-bottom !important;
+                z-index: 1000 !important;
+
+                ul{
+                    padding: $recommendations-slider-indicators-ul-padding;
+                    @extend %recommentions-back;
+
+                    li{
+                        margin: $recommendations-slider-indicators-ul-li-margin-xl !important;
+                        @include border(solid, $recommendations-slider-indicators-ul-li-border, $color-white);
+                        @include size($recommendations-slider-indicators-ul-li-size-xl !important, $recommendations-slider-indicators-ul-li-size-xl !important);
+                        font-size: 0 !important;
+                        background-color: transparent;
+
+                        @include media(md){width: $recommendations-slider-indicators-ul-li-size-md !important; height: $recommendations-slider-indicators-ul-li-size-md !important; margin: $recommendations-slider-indicators-ul-li-margin-md !important;}
+                        @include media(sm){width: $recommendations-slider-indicators-ul-li-size-md !important; height: $recommendations-slider-indicators-ul-li-size-md !important; margin: $recommendations-slider-indicators-ul-li-margin-md !important;}
+                        @include media(xs){width: $recommendations-slider-indicators-ul-li-size-md !important; height: $recommendations-slider-indicators-ul-li-size-md !important; margin: $recommendations-slider-indicators-ul-li-margin-md !important;}
+                    }
+
+                    .active{
+                        background-color: $color-white !important;
+                    }
+                }
+            }
+
+            
+
+            /*
+            &:nth-child(2n){
+                    margin: 0 0 0 auto;
+            }
+            */
+        }
+    }
+}

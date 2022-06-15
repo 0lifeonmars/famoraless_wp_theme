@@ -1,0 +1,285 @@
+
+
+body{
+    main{
+        #about{
+            @include space(0, $section-padding);
+            background-color: $color-shadow-pink-06;
+
+            .header{
+            
+                background-image: $bg-image-about;
+                @extend %section-header-style;
+
+                .color{
+                    @extend %bgAnimated-effect;
+                    
+                    img.profile{
+                        display: block;
+                        object-fit: cover;
+                        @include space($about-profile-img-margin, 0);
+                        @include max-size($about-profile-img-size-xl, $about-profile-img-size-xl);
+                        @include size($about-profile-img-size-xl, $about-profile-img-size-xl);
+                        @include border(solid, $about-profile-img-border, $color-white);
+                        border-radius: 100%;
+                        -webkit-border-radius: 100%;
+                        -moz-border-radius: 100%;
+                        -ms-border-radius: 100%;
+                        -o-border-radius: 100%;
+                        box-shadow: $about-profile-img-shadow;
+                        -webkit-box-shadow: $about-profile-img-shadow; 
+                        @extend %flipInY-effect;
+                    }
+
+                    h2{
+                        @extend %flipInY-effect;
+                    }
+
+                    img.scrolldown{
+                        @extend %scrollDown-effect;
+                    }
+                }
+            }
+
+            h3.about-subtitle{
+                @include space(0, 0);
+                color: $color-white;
+                text-align: center;
+                text-transform: uppercase;
+                text-shadow: $about-subtitle-shadow;
+                @extend %h4-style;
+            }
+
+            span.hr{
+                display: block;
+                @include space($about-hr-margin, 0);
+                @include size(35%, $about-hr-height);
+                background: linear-gradient(90deg, transparent 0%, $color-white 25%, $color-white 75%, transparent 100%);
+                box-shadow: $about-hr-shadow;
+            }
+
+            p{
+                @include space($about-text-margin, 0);
+                width: 100%;
+                color: $color-black;
+                text-transform: initial;
+                @extend %p-style;
+            }
+
+            img.img-avatar-01, img.img-avatar-02{
+                display: block;
+                object-fit: cover;
+                @include size(100%, 100%);
+            }
+
+            img.img-avatar-01{
+                @include max-size($about-avatar-01-width, $about-avatar-01-height);
+            }
+
+            img.img-avatar-02{
+                @include max-size($about-avatar-02-width, $about-avatar-02-height);
+            }
+
+            .card, .skill-card{
+                @include space(0, $about-card-padding);
+                @include size(100%, 100%);
+                @extend %card;
+
+                .content{
+                    @include space(0, $about-card-content-padding);
+                    @include size(100%, 100%);
+                }
+            }
+
+            .card{
+                .content{
+                    border-color: $color-black;
+                    background-color: $color-white;
+                    
+                    img.strengths-icon{
+                        display: block;
+                        @include space($about-strengths-icon-margin, 0);
+                        @include size(100%, 100%);
+                        @include max-size($about-strengths-icon-size, $about-strengths-icon-size);
+                    }
+
+                    h4.strengths-title{
+                        @include space($about-strengths-title-margin, 0);
+                        text-align: center;
+                        text-transform: uppercase;
+                        @extend %subtitle-style;
+                    }
+                }
+            }
+
+            .skill-card{
+                cursor: pointer;
+                
+                .content{
+                    display: flex;
+                    @include flex(column, center, center);
+                    border-color: $color-gray;
+                    background-color: $color-trans-black-8;
+                    
+                    img.logo{
+                        display: block;
+                        @include space(0, 0);
+                        @include max-size($about-skill-logo-size-xl, $about-skill-logo-size-xl);
+                        @include size(100%, 100%);
+                    }
+
+                    h4{
+                        @include space($about-skill-title-margin, 0);
+                        text-transform: uppercase;
+                        text-shadow: $about-skill-shadow;
+                        color: $color-white;
+                        @extend %subtitle-style;
+                    }
+
+                    span.skill-container{
+                        display: block;
+                        @include space(0, $about-skill-percent-padding);
+                        background-color: $color-white;
+                        @include size(90%, $about-skill-percent-height);
+                        border-radius: $about-skill-percent-radius;
+                        -webkit-border-radius: $about-skill-percent-radius;
+                        -moz-border-radius: $about-skill-percent-radius;
+                        -ms-border-radius: $about-skill-percent-radius;
+                        -o-border-radius: $about-skill-percent-radius;
+                        
+
+                        span.skill-percent{
+                            display: block;
+                            height: 100%;
+                            background-color: $color-blue;
+                            border-radius: $about-skill-percent-radius;
+                            -webkit-border-radius: $about-skill-percent-radius;
+                            -moz-border-radius: $about-skill-percent-radius;
+                            -ms-border-radius: $about-skill-percent-radius;
+                            -o-border-radius: $about-skill-percent-radius;
+                        }
+                    }
+
+                    p{
+                        @include space($about-skill-text-margin, 0);
+                        color: $color-white;
+                        text-shadow: $about-skill-shadow;
+                        text-align: center;
+                        @extend %subtitle-style;
+                    }
+
+                    img.icon{
+                        @include space($about-skill-icon-margin, 0);
+                        @include max-size($about-skill-icon-size, $about-skill-icon-size);
+                        @include size(100%, 100%);
+                    }
+                }
+            }
+
+            .flip-card {
+                @include size(100%, $flipcard-height);
+                background-color: transparent;
+                perspective: $flipcard-perspective;
+                -webkit-perspective: $flipcard-perspective;
+                -moz-perspective: $flipcard-perspective;
+                -ms-perspective: $flipcard-perspective;
+                -o-perspective: $flipcard-perspective;
+                
+                &:hover{ 
+                    .flip-card-inner {
+                        transform: rotateY(180deg);
+                        -webkit-transform: rotateY(180deg);
+                        -moz-transform: rotateY(180deg);
+                        -ms-transform: rotateY(180deg);
+                        -o-transform: rotateY(180deg);
+                    }
+                }
+
+                .flip-card-inner {
+                    position: relative;
+                    @include size(100%, 100%);
+                    transition: transform 0.6s;
+                    -webkit-transition: transform 0.6s;
+                    -moz-transition: transform 0.6s;
+                    -ms-transition: transform 0.6s;
+                    -o-transition: transform 0.6s;
+                    transform-style: preserve-3d;
+                    -webkit-transform-style: preserve-3d;
+
+                    .flip-card-front, .flip-card-back{
+                        position: absolute;
+                        @include size(100%, 100%);
+                        backface-visibility: hidden;
+                        -webkit-backface-visibility: hidden;
+                        -moz-backface-visibility: hidden;
+                        -ms-backface-visibility: hidden;
+                    }
+                     @extend %p-responsive-style;
+                    .flip-card-back {
+                        transform: rotateY(180deg);
+                        -webkit-transform: rotateY(180deg);
+                        -moz-transform: rotateY(180deg);
+                        -ms-transform: rotateY(180deg);
+                        -o-transform: rotateY(180deg);
+                    }
+                }
+            }
+
+            ul.social-menu{
+                @include space(0, 0);
+
+                li{
+                    display: inline-block;
+                    margin: $about-social-ul-li-margin-xl;
+                    @include size($about-social-ul-li-size-xl, $about-social-ul-li-size-xl);
+                    min-width: auto !important;
+                    color: $color-black;
+                    font-size: $f-size-20;
+                    background-color: $color-white;
+                    text-shadow: none;
+                    box-shadow: $about-social-ul-li-btn-normal-shadow;
+                    -webkit-box-shadow: $about-social-ul-li-btn-normal-shadow;
+                    @extend %btn-general-style;
+                    @extend %btn-fill-style;
+                    
+                    &:hover{
+                        box-shadow: $about-social-ul-li-btn-hover-shadow;
+                        -webkit-box-shadow: $about-social-ul-li-btn-hover-shadow;
+
+                        a{
+                            span{
+                                color: $color-blue !important;
+                            }
+                        }
+                    }
+
+                    &:active{
+                        box-shadow: 0 0 #AAA;
+                        -webkit-box-shadow: 0 0 #AAA;
+                    }
+                    
+                    &:last-child{
+                        margin: 0;
+                    }
+                    
+                    a{
+                        display: flex;
+                        @include flex(column, center, center);
+                        @include space(0, $about-social-ul-li-btn-padding);
+                        @include size(100%, 100%);
+                        text-decoration: none;
+
+                        &:visited{
+                            color: $color-black;
+                        }
+
+                        span{
+                            color: $color-black;
+                            font-size: $f-size-28;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

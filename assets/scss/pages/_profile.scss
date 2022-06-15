@@ -1,0 +1,110 @@
+body{  
+    main{
+        #profile{
+            position: relative;
+            display: flex;
+            @include flex(column, center, center);
+            @include space(0, $section-padding);
+            @include min-size(100%, 100vh);
+            max-height: 100vh;
+            overflow: hidden;
+
+            video{
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 0;
+                @include min-size(100%, 100vh);
+            }
+
+            .profile-content{
+                position: relative;
+                top: 0;
+                left: 0;
+                @include space(0, 0);
+                @include size(100%, 100vh);
+                background-color: $color-trans-black-8;
+                z-index: 2;
+
+                img{
+                    object-fit: cover;
+                    position: fixed;
+                    bottom: 0;
+                    left: 0;
+                    @include space(0, 0);
+                    border: 0;
+                    height: 84vh;
+                    max-height: 84vh;
+                    z-index: 3;
+                    @extend %bounceInUp-effect;
+                }
+
+                .profile-info{
+                    display: flex;
+                    @include flex(column, center, center);
+                    @include space(0, $profile-info-padding);
+                    @include size(100%, 100vh);
+                    position: relative;
+                    z-index: 4;
+
+
+                    h2{
+                        @include space($profile-txt-margin, $profile-txt-padding);
+                        @include border(solid, $profile-txt-border, $color-blue);
+                        @include font($f-name-bangers, $f-size-70, $color-white, $f-weight-regular, normal);
+                        @extend %profile-title-style;
+                        @extend %titlesProfile-Effect;
+                        
+                    }
+
+                    p{
+                        @include space($profile-txt-margin, $profile-txt-padding);
+                        @include border(solid, $profile-txt-border, $color-blue);
+                        @include font($f-name-bangers, $f-size-46, $color-white, $f-weight-regular, normal);
+                        @extend %profile-title-style;
+                        @extend %titlesProfile-Effect;
+                    
+                    }
+
+                    span{
+                        display: flex;
+                        @include flex(row, center, center);
+                        width: 100%;
+
+                        .btn{
+                            margin: $profile-info-btn-margin-xl;
+                            color: $color-pink;
+                            font-size: $f-size-18;
+                            border-color: $color-pink;
+                            background-color: $color-trans-black-8;
+                            box-shadow: $profile-info-btn-normal-boxshadow;
+                            -webkit-box-shadow: $profile-info-btn-normal-boxshadow;                                        
+                            @extend %btn-general-style;
+                            @extend %btn-outline-style;
+                            @extend %bounceInDown-effect;
+
+                            &:last-child{
+                                margin: $profile-info-btn-margin-sm;
+                            }
+                                
+                            &:hover{
+                                box-shadow: $profile-info-btn-hover-boxshadow;
+                                -webkit-box-shadow: $profile-info-btn-hover-boxshadow;
+                            }
+
+                            &:active{
+                                box-shadow: 0 0 #DC2ADE;
+                                -webkit-box-shadow: 0 0 #DC2ADE;
+                            }
+
+                            &:visited{
+                                color: $color-pink;
+                            }
+                        }
+                    }
+                }          
+            }
+        }
+    }
+} 

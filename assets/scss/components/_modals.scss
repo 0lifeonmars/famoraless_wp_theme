@@ -1,0 +1,193 @@
+body{
+    .modal-fade{
+        @extend %ModalfadeIn-effect;
+    }
+
+    .modal{
+        @include space(0, $modal-padding);
+        position: fixed;
+        top: 0;
+        left: 0;
+        @include size(100%, 100vh);
+        background-color: $color-trans-black-8;
+        z-index: 8000;
+        overflow-x: hidden;
+        overflow-y: auto;
+        
+        .btn-modal-close{
+            position: fixed;
+            top: $modal-btn-close-top;
+            right: 5.5%;
+            color: $color-black;
+            background-color: $color-tone-blue-03;
+            @extend %modal-btn-close;
+           
+            &:hover{
+                color: $color-white;
+                background-color: $color-blue;
+                @extend %transition-250ms;
+            }
+        }
+
+        .modal-content{
+            @include space(0, $modal-content-margin);
+            position: relative;
+            background: $color-white;
+            border-radius: $modal-content-radius;
+            -webkit-border-radius: $modal-content-radius;
+            -moz-border-radius: $modal-content-radius;
+            -ms-border-radius: $modal-content-radius;
+            -o-border-radius: $modal-content-radius;
+            min-height: 100%;
+
+            .header{
+                @include space(0, 0);
+                @include size(100%, $modal-content-header-height);
+                @include background(center center, no-repeat, cover);
+                
+                .color{
+                    display: flex;
+                    @include flex(column ,center, center);
+                    @include space(0, $modal-content-header-color-margin);
+                    @include size(100%, 100%);
+                    background: linear-gradient(270deg, rgba(31, 38, 138, 0.6), rgba(76, 86, 225, 0.6), rgba(50, 61, 221, 0.6), rgba(101, 110, 229, 0.6), rgba(26, 31, 110, 0.6));
+                    background-size: 600% 600%;
+                    @extend %bgAnimated-effect;
+
+                    h2{
+                        @extend %h6-style;
+                        color: $color-white;
+                        text-transform: uppercase;
+                        text-align: center;
+                        text-shadow: $modal-content-shadow;
+                    }
+                }
+            }
+
+            p{
+                @extend %p-style;
+            }
+            
+            .description{
+                p {
+                    @include font($f-name-worksans, $f-size-20, $color-black, $f-weight-medium, normal);
+                }
+            }
+            .img-responsive{
+                object-fit: cover;
+                max-width: $modal-img-mockup-width;
+                width: 100%
+            }
+
+            .modal-card{
+                display: flex;
+                @include flex(column, center, center);
+                @include space(0, 8%);
+                @include size(100%, auto);
+                border-radius: $modal-content-radius;
+                -webkit-border-radius: $modal-content-radius;
+                -moz-border-radius: $modal-content-radius;
+                -ms-border-radius: $modal-content-radius;
+                -o-border-radius: $modal-content-radius;
+                height: 100%;
+                min-height: $modal-card-height;
+                box-shadow: $modal-content-shadow;
+
+                h3{
+                    @include space($modal-card-h3-margin, 0);
+                    color: $color-white;
+                    text-shadow: $modal-content-shadow;
+                    text-transform: uppercase;
+                    text-align: center;
+                    @extend %subtitle-style;
+                }
+
+                p{
+                    @include space($modal-card-p-margin, 0);
+                    color: $color-white;
+
+                    &:last-child{
+                        margin: 0;
+                    }
+                }
+
+                ul{
+                    @include space($modal-card-ul-margin, 0);
+
+                    li{
+                        @include space($modal-card-ul-li-margin, 0);
+                        display: inline-block;
+                        background-color: $color-purple;
+                        border-radius: $modal-content-radius;
+                        -webkit-border-radius: $modal-content-radius;
+                        -moz-border-radius: $modal-content-radius;
+                        -ms-border-radius: $modal-content-radius;
+                        -o-border-radius: $modal-content-radius;
+                        box-shadow: $modal-content-shadow;
+
+                        p{
+                            @include space(0, $modal-card-ul-li-p-padding);
+                            color: $color-white;
+                            font-weight: $f-weight-semibold;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+
+            .modal-card-pink{
+                background: linear-gradient(270deg, $color-shadow-pink-02, $color-shadow-pink-01, $color-pink, $color-shadow-pink-03, $color-shadow-pink-04);
+                background-size: 600% 600%;
+                @extend %bgAnimated-effect;
+            }
+
+            .modal-card-blue{
+                background: linear-gradient(270deg, $color-shadow-blue-02, $color-shadow-blue-01, $color-blue, $color-shadow-blue-03, $color-shadow-blue-04);
+                background-size: 600% 600%;
+                @extend %bgAnimated-effect;
+            }
+
+            .modal-card-yellow{
+                background: linear-gradient(270deg, $color-shadow-yellow-02, $color-shadow-yellow-01, $color-yellow, $color-shadow-yellow-03, $color-shadow-yellow-04);
+                background-size: 600% 600%;
+                @extend %bgAnimated-effect;
+
+                h3{
+                    margin: $modal-card-yellow-h3-margin;
+                }
+            }
+
+            .btn{
+                @extend %btn-general-style;
+                @extend %btn-outline-style;
+                margin: $modal-btn-general-margin;
+                color: $color-black;
+                font-size: $f-size-16;
+                border-color: $color-black;
+                box-shadow: $modal-btn-general-normal-shadow;
+                -webkit-box-shadow: $modal-btn-general-normal-shadow;
+                text-shadow: none;
+                min-width: $modal-btn-general-width !important;
+                
+                &:hover{
+                    box-shadow: $modal-btn-general-hover-shadow;
+                    -webkit-box-shadow: $modal-btn-general-hover-shadow;
+                }
+    
+                &:active{
+                    box-shadow: 0 0 #000;
+                    -webkit-box-shadow: 0 0 #000;
+                }
+
+                &:last-child{
+                    margin: 0;
+                }
+
+                span{
+                    @include space($modal-btn-general-span-margin, 0);
+                    font-size: $f-size-18;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+body{
+	nav{
+		display: flex;
+		@include flex(column, space-between, flex-start);
+		padding: $nav-padding !important;
+		border-width: $nav-border !important;
+		border-color: $color-blue !important;
+		background-color: $color-black !important;
+		
+		.pushy-close{
+			position: absolute;
+			top: $nav-btn-close-top; 
+			right: $nav-btn-close-right;
+
+			.btn-nav-close{
+				color: $color-black;
+				background-color: $color-tone-blue-03;
+				@extend %modal-btn-close;
+			}
+				
+			&:hover{
+				@extend %transition-250ms;
+
+				.btn-nav-close{
+					color: $color-white;
+					background-color: $color-blue;
+				}
+			}
+		}		
+
+		.pushy-content {
+			@include size(100%, 100%);
+
+			ul{
+				width: 100% !important;
+
+				li{
+					@include space($nav-menu-ul-li-margin, 0);
+					display: block;
+					padding: $nav-menu-ul-li-padding;
+					width: 100% !important;
+
+					&:hover{
+						background: $color-purple;
+						background: linear-gradient(90deg, $color-purple 0%, $color-black 100%);
+						animation: navMenuBg 500ms ease 1 normal forwards;
+						-webkit-animation: navMenuBg 500ms ease 1 normal forwards;
+					}
+
+					a{
+						display: flex;
+						@include flex(row, flex-start, center);
+						width: 100% !important;
+						height: 100% !important;
+						@include font($f-name-kanit, $f-size-18, $color-white, $f-weight-bold, normal);
+						letter-spacing: $nav-menu-ul-li-a-letter;
+						
+						span{
+							@include space($nav-menu-ul-li-a-span-margin, 0);
+							font-size: $f-size-22;
+						}
+					}
+				}
+			}
+
+			.item-active{
+				background: $color-blue !important;
+				background: linear-gradient(90deg, $color-blue 0%, $color-black 100%) !important;
+			}
+		}	
+		
+
+		.pushy-social{
+			@include space(0, $nav-menu-social-padding);
+			width: 100%;
+
+			ul{
+				display: flex;
+				@include flex(row, space-between, center);
+				@include space(0, 0);
+				@include size(100%, $nav-menu-social-ul-height);
+
+				li{
+					display: flex;
+					@include flex(column, center, center);
+					@include space(0, 0);
+					
+					a{					
+						@include space(0, $nav-menu-social-ul-li-a-padding);
+						@include border(solid, $nav-border, $color-white);
+						border-radius: 100%;
+						-webkit-border-radius: 100%;
+						-moz-border-radius: 100%;
+						-ms-border-radius: 100%;
+						-o-border-radius: 100%;
+
+						span{
+							font-size: $f-size-18;
+							color: $color-white;
+						}
+
+						&:hover{
+							border-color: $color-blue;
+							@extend %transition-250ms;
+							@extend %scale-transform-effect;
+
+							span{
+								color: $color-blue;
+								@extend %transition-250ms;
+								@extend %scale-transform-effect;
+							}
+						}	
+					}
+				}
+			}
+		}
+	}
+}

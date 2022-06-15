@@ -1,0 +1,138 @@
+body{
+    header{
+        position: fixed;
+        top: 0; 
+        left: 0;
+        @include space(0, 0);
+        @include border(solid, $header-border-size, $color-blue);
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        @include size(100%, $header-height);
+        max-height: $header-height;
+        background-color: $color-black;
+        z-index: 1000;
+
+        img{
+            display: block;
+            position: absolute;
+            top: $header-arrow-top;
+            left: $header-arrow-left-xl;
+            z-index: 1001;
+            object-fit: cover;
+            @include size($header-arrow-width, $header-arrow-height);
+            @include space(0, 0);
+            @extend %headerArrow-effect;
+
+            @include media(lg){left: $header-arrow-left-lg;}
+            @include media(md){display: none;}
+            @include media(sm){display: none;}
+            @include media(xs){display: none;}
+        }
+
+        h1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            @include flex(column, center, center);
+            @include size(100%, $header-height);
+            z-index: 1001;
+            @include space(0, 0 10% 0 10%);
+            @include font($f-name-kanit, $f-size-20, $color-white, $f-weight-bold, normal);
+            letter-spacing: $header-h1-letter;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        div{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            @include flex(row, space-between, center);
+            @include space(0, 0 10% 0 10%);
+            @include size(100%, $header-height);
+            z-index: 1002;
+
+            button.menu-btn{
+                display: flex;
+                @include flex(column, center, center);
+                @include space(0, $header-button-margin);
+                @include border(solid, $header-border-size, $color-blue);
+                border-top: none;
+                height: 100%;
+                background-color: $color-black;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: $color-blue;
+                    @extend %transition-250ms;
+                    
+                    span{
+                        color: $color-white;
+                        @extend %transition-250ms;
+                        
+                    }
+                }
+
+                span{
+                    color: $color-white;
+                    font-size: $f-size-24;
+                }
+                
+            }
+
+            ul.social-media{
+                display: block;
+                @include space(0, 0);
+                height: 100%;
+
+                li{
+                    display: inline-block;
+                    @include space(0, 0);
+                    @include border(solid, $header-border-size, $color-blue);
+                    border-top: none;
+                    border-bottom: none;
+                    border-right: none;
+                    height: 100%;
+
+                    &:last-child{
+                        @include border(solid, $header-border-size, $color-blue);
+                        border-top: none;
+                        border-bottom: none;
+                    }
+
+                    &:hover{
+                        a{
+                            span{
+                                color: $color-blue;
+                                @extend %scale-transform-effect;
+                                @extend %transition-250ms;
+                            }
+                        }
+                    }
+
+                    a{
+                        display: flex;
+                        @include flex(column, center, center);
+                        @include space(0, $header-social-ul-li-a-margin);
+                        @include size(100%, 100%);
+                        text-decoration: none;
+
+                        span{
+                            display: block;
+                            @include space(0, 0);
+                            font-size: $f-size-18;
+                            color: $color-white;
+                        }
+
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}

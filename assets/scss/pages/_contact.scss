@@ -1,0 +1,162 @@
+body{
+    #contact{
+        position: fixed; 
+        top: 0; 
+        left: 0;
+        @include space(0, $contact-padding);
+        @include size(100%, 100%);
+        background-color: $color-trans-black-8;
+        overflow-y: auto;
+        z-index: 9000;
+
+        .btn-contact-close{
+            position: fixed;
+            top: $modal-btn-close-top;
+            right: 4.5%;
+            color: $color-black;
+            background-color: $color-yellow;
+            @extend %modal-btn-close;
+        
+            &:hover{
+                color: $color-white;
+                background-color: $color-shadow-yellow-03;
+            }
+        }
+
+        .content{
+            @include space(0, $contact-content-padding);
+            width: 100%;
+            border-radius: $contact-radius;
+            -webkit-border-radius: $contact-radius;
+            -moz-border-radius: $contact-radius;
+            -ms-border-radius: $contact-radius;
+            -o-border-radius: $contact-radius;
+            background-color: $color-white;
+            box-shadow: $contact-content-shadow;
+            backdrop-filter: blur($contact-content-blur);
+            -webkit-backdrop-filter: blur($contact-content-blur);
+
+            h2{
+                @include space($contact-content-h2-margin, 0);
+                color: $color-black;
+                text-align: center;
+                text-transform: uppercase;
+                @extend %h4-style;
+            }
+
+            form{
+                display: block;
+                margin: 0 auto 0 auto;
+                width: 100%;
+
+                label{
+                    @include space($contact-content-form-label-margin, 0);
+                    color: $color-black;
+                    text-transform: uppercase;
+                    text-align: left;
+                    @extend %subtitle-style;
+                }
+
+                .error{
+                    margin: $contact-content-form-error-margin;
+                    @include font($f-name-worksans, $f-size-12, $color-red, $f-weight-semibold, normal);
+                }
+
+                input[type=text], input[type=email], textarea{
+                    @include space($contact-content-form-input-margin, $contact-content-form-input-padding);
+                    @include border(solid, $contact-content-form-input-border, $color-black);
+                    border-radius: $contact-radius;
+                    -webkit-border-radius: $contact-radius;
+                    -moz-border-radius: $contact-radius;
+                    -ms-border-radius: $contact-radius;
+                    -o-border-radius: $contact-radius;
+                    color: $color-black;
+                    background: none;
+                    @extend %p-style;
+
+                    &::placeholder{
+                        text-transform: uppercase;
+                        color: $color-gray;
+                    }
+                }
+
+                input[type=text], input[type=email]{
+                    height: $contact-content-form-input-height;
+                }
+
+                textarea{
+                    resize: none;
+                    height: $contact-content-form-textarea-height;
+                }
+
+                input[type=submit]{
+                    color: $color-white;
+                    font-size: $f-size-18;
+                    background-color: $color-blue;
+                    box-shadow: $content-contact-form-btn-normal-boxshadow;
+                    -webkit-box-shadow: $content-contact-form-btn-normal-boxshadow;
+                    @extend %btn-general-style;
+                    @extend %btn-fill-style;
+                    
+                    &:hover{
+                        box-shadow: $content-contact-form-btn-hover-boxshadow;
+                        -webkit-box-shadow: $content-contact-form-btn-hover-boxshadow;
+                    }
+
+                    &:active{
+                        box-shadow: 0 0 #191F6E;
+                        -webkit-box-shadow: 0 0 #191F6E;
+                    }
+                }
+            }
+
+            .contact-info{
+                img{
+                    display: block;
+                    @include space($contact-info-img-margin, 0);
+                    object-fit: fill;
+                    @include max-size($contact-info-img-width, $contact-info-img-height);
+                    @include size(100%, 100%);   
+                }
+
+                p{
+                    @include space($contact-info-p-margin, 0);
+                    width: 100%;
+                    color: $color-black;
+                    text-transform: initial;
+                    text-align: center;
+                    @extend %p-style;
+                }
+
+                div{
+                    a{
+                       
+                        margin: $contact-info-btn-margin-xl;
+                        color: $color-white;
+                        font-size: $f-size-18;
+                        background-color: $color-pink;
+                        box-shadow: $contact-info-btn-normal-shadow;
+                        -webkit-box-shadow: $contact-info-btn-normal-shadow;
+                        min-width: auto !important;
+                        @extend %btn-general-style;
+                        @extend %btn-fill-style;
+
+                        &:last-child{
+                            margin: 0;
+                        }
+                        
+                        &:hover{
+                            box-shadow: $contact-info-btn-hover-shadow;
+                            -webkit-box-shadow: $contact-info-btn-hover-shadow;
+                        }
+    
+                        &:active{
+                            box-shadow: 0 0 #891A8B;
+                            -webkit-box-shadow: 0 0 #891A8B;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
