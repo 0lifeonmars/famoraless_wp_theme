@@ -1,1 +1,113 @@
-@font-face{font-family:Kanit;src:url("../fonts/kanit/kanit_700_bold.ttf");font-weight:700;font-style:normal}@font-face{font-family:Kanit;src:url("../fonts/kanit/kanit_800_extrabold.ttf");font-weight:800;font-style:normal}@font-face{font-family:Kanit;src:url("../fonts/kanit/kanit_900_black.ttf");font-weight:900;font-style:normal}@font-face{font-family:Kanit;src:url("../fonts/kanit/kanit_700_bold_italic.ttf");font-weight:700;font-style:italic}@font-face{font-family:Kanit;src:url("../fonts/kanit/kanit_800_extrabold_italic.ttf");font-weight:800;font-style:italic}@font-face{font-family:Kanit;src:url("../fonts/kanit/kanit_900_black_italic.ttf");font-weight:900;font-style:italic}@font-face{font-family:Bangers;src:url("../fonts/bangers_400_regular.ttf");font-weight:400;font-style:normal}@font-face{font-family:WorkSans;src:url("../fonts/work_sans/worksans_400_regular.ttf");font-weight:400;font-style:normal}@font-face{font-family:WorkSans;src:url("../fonts/work_sans/worksans_500_medium.ttf");font-weight:500;font-style:normal}@font-face{font-family:WorkSans;src:url("../fonts/work_sans/worksans_600_semibold.ttf");font-weight:600;font-style:normal}@font-face{font-family:WorkSans;src:url("../fonts/work_sans/worksans_400_regular_italic.ttf");font-weight:400;font-style:italic}@font-face{font-family:WorkSans;src:url("../fonts/work_sans/worksans_500_medium_italic.ttf");font-weight:500;font-style:italic}@font-face{font-family:WorkSans;src:url("../fonts/work_sans/worksans_600_semibold_italic.ttf");font-weight:600;font-style:italic}
+/* FONTS NAMES */
+/* KANIT FONT */
+/* KANIT ITALIC FONT */
+/* BANGERS FONT */
+/* WORK SANS FONT */
+/* WORK SANS ITALIC FONT */
+/* FONTS SIZES */
+/* FONTS WEIGHTS */
+/** 
+* FONT KANIT 
+**/
+@font-face {
+  font-family: Kanit;
+  src: url("../fonts/kanit/kanit_700_bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Kanit;
+  src: url("../fonts/kanit/kanit_800_extrabold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Kanit;
+  src: url("../fonts/kanit/kanit_900_black.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/** 
+* FONT KANIT ITALIC 
+**/
+@font-face {
+  font-family: Kanit;
+  src: url("../fonts/kanit/kanit_700_bold_italic.ttf");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Kanit;
+  src: url("../fonts/kanit/kanit_800_extrabold_italic.ttf");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Kanit;
+  src: url("../fonts/kanit/kanit_900_black_italic.ttf");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/**
+* FONT BANGERS
+*/
+@font-face {
+  font-family: Bangers;
+  src: url("../fonts/bangers_400_regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/** 
+* FONT WORK SANS
+**/
+@font-face {
+  font-family: WorkSans;
+  src: url("../fonts/work_sans/worksans_400_regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: WorkSans;
+  src: url("../fonts/work_sans/worksans_500_medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: WorkSans;
+  src: url("../fonts/work_sans/worksans_600_semibold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/** 
+* FONT WORK SANS ITALIC
+**/
+@font-face {
+  font-family: WorkSans;
+  src: url("../fonts/work_sans/worksans_400_regular_italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: WorkSans;
+  src: url("../fonts/work_sans/worksans_500_medium_italic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: WorkSans;
+  src: url("../fonts/work_sans/worksans_600_semibold_italic.ttf");
+  font-weight: 600;
+  font-style: italic;
+}

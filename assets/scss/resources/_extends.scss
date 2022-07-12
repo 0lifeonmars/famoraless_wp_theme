@@ -305,13 +305,13 @@
 }
 /* CSS EFFECTS */
 %bounceInDown-effect {
-    animation: bounceInDown 2500ms ease 5000ms both;
-    -webkit-animation: bounceInDown 2500ms ease 5000ms both;
+    animation: bounceInDown 2500ms ease 1000ms both;
+    -webkit-animation: bounceInDown 2500ms ease 1000ms both;
 }
 
 %bounceInUp-effect {
-    animation: bounceInUp 2500ms ease 5000ms both;
-    -webkit-animation: bounceInUp 2500ms ease 5000ms both;
+    animation: bounceInUp 500ms ease 1000ms both;
+    -webkit-animation: bounceInUp 500ms ease 1000ms both;
 }
 
 %titlesProfile-Effect{

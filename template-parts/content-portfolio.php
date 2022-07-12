@@ -74,7 +74,7 @@
         </div> 
     
         <div class="mobile">
-            <div id="scroll_top" class="header">
+            <div class="header">
                 <div class="color">
                     <span class="profile-image">
                         <h2><?= the_title();?></h2>
@@ -85,7 +85,7 @@
                 </div>
             </div>
     
-            <div class="container-fluid mt-80px p-0">
+            <div id="scroll_top" class="container-fluid mt-80px p-0">
                 <div class="row row-80 mx-auto my-0 p-0 contents">
                     <?php
                         $temp = $wp_query;

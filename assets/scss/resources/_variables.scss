@@ -80,8 +80,10 @@ $profile-txt-shadow: 2px 2px 2px #000;
 $profile-info-padding: 50px 5% 50px 5%;
 $profile-info-btn-margin-xl: 0 18px 18px 0;
 $profile-info-btn-margin-sm: 0 0 18px 0;
-$profile-info-btn-normal-boxshadow: 0 5px #DC2ADE;
-$profile-info-btn-hover-boxshadow: 0 3px #DC2ADE;
+$profile-info-btn-portfolio-normal-boxshadow: 0 5px #DC2ADE;
+$profile-info-btn-portfolio-hover-boxshadow: 0 3px #DC2ADE;
+$profile-info-btn-about-normal-boxshadow: 0 5px #E8F044;
+$profile-info-btn-about-hover-boxshadow: 0 3px #E8F044;
 
 
 /* SECTION GENERAL PX VARIABLES*/
@@ -226,4 +228,4 @@ $modal-btn-general-normal-shadow: 0 5px #000;
 $modal-btn-general-hover-shadow: 0 3px #000;
 $modal-btn-general-width: 153px;
 $modal-btn-general-span-margin: 0 4px 0 0;
-$modal-img-mockup-width: 900px;
+$modal-img-mockup-width: 910px;

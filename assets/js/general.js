@@ -18,6 +18,7 @@ jQuery(document).ready(function($){
     var tag_htmlbody = $('html, body');
     var tag_scrolltop = $('#scroll_top');
     var tag_recommendations_slider = $('.slider_one_big_picture');
+    var tag_content_social = $('.social-contact');
 
     /**
     * FUNCIONES
@@ -45,7 +46,7 @@ jQuery(document).ready(function($){
     /**
     * AL CARGAR PAGINA
     */
-    tag_loader.delay(5000).fadeOut(0); // desaparece en 5s el loader
+    tag_loader.delay(1000).fadeOut(0); // desaparece en 1s el loader
     new WOW().init(); // activamos efectos del plugin WOW
 
     /**
@@ -63,9 +64,8 @@ jQuery(document).ready(function($){
         `);
     });
 
-    $.getJSON('https://famoraless.com/wp-json/menus/v1/menus/4', (social) => {
-        var items_social = social.items;
-        console.log(items_social);
+    $.getJSON('https://famoraless.com/wp-json/menus/v1/menus/4', (social) => { //obtenemos datos del WP-JSON
+        var items_social = social.items; // Conseguimos array de elementos menu en variable
         /* PLANTILLA MENÚ REDES SOCIALES */
         tag_nav_social_link_general.prepend(`
             <li><a href="${items_social[0].url}" target="_blank"><span class="bi bi-github"></span></a></li>
@@ -73,6 +73,18 @@ jQuery(document).ready(function($){
             <li><a href="${items_social[2].url}" target="_blank"><span class="bi bi-stack-overflow"></span></a></li>
             <li><a href="${items_social[3].url}" target="_blank"><span class="bi bi-behance"></span></a></li>
         `);
+    });
+
+    $.getJSON('https://famoraless.com/wp-json/menus/v1/menus/contact-menu', (contact) => { //obtenemos datos del WP-JSON
+        var items_contact = contact.items; // Conseguimos array de elementos menu en variable
+
+        tag_content_social.prepend(`
+            <a href="${items_contact[0].url}" target="_blank"><span class="bi bi-facebook"></span></a>
+            <a href="${items_contact[1].url}" target="_blank"><span class="bi bi-twitter"></span></a> 
+            <a href="${items_contact[2].url}" target="_blank"><span class="bi bi-instagram"></span></a> 
+            <a href="${items_contact[3].url}" target="_blank"><span class="bi bi-behance"></span></a> 
+        `);
+            
     });
 
 
@@ -143,7 +155,7 @@ jQuery(document).ready(function($){
 
             // Using jQuery's animate() method to add smooth page scroll
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            tag_htmlbody.animate({scrollTop: $(hash).offset().top + tag_scrolltop.height()}, 800, function(){           
+            tag_htmlbody.animate({scrollTop: $(hash).offset().top}, 800, function(){           
                 window.location.hash = hash;  // Add hash (#) to URL when done scrolling (default click behavior)
             });
         } // End if

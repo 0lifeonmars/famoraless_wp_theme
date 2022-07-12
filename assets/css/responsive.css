@@ -1,0 +1,898 @@
+/* SOLID COLORS */
+/* TRANSPARENTS COLORS */
+/* PURPLE TONES COLORS */
+/* PURPLE SHADOWS COLORS */
+/* BLUE TONES COLORS */
+/* BLUE SHADOWS COLORS */
+/* PINK TONES COLORS */
+/* PINK SHADOWS COLORS */
+/* YELLOW TONES COLORS */
+/* YELLOW SHADOWS COLORS */
+/* FONTS NAMES */
+/* KANIT FONT */
+/* KANIT ITALIC FONT */
+/* BANGERS FONT */
+/* WORK SANS FONT */
+/* WORK SANS ITALIC FONT */
+/* FONTS SIZES */
+/* FONTS WEIGHTS */
+/* IMAGES URL */
+/* LOADER PX VARIABLES */
+/* ALERTS PX VARIABLES */
+/* HEADER PX VARIABLES */
+/* NAV PX VARIABLES */
+/* FOOTER PX VARIABLES */
+/* BUTTONS PX VARIABLES */
+/* CARDS PX VARIABLES */
+/* #PROFILE PX VARIABLES */
+/* SECTION GENERAL PX VARIABLES*/
+/* FLIPCARD PX VARIABLES*/
+/* #ABOUT PX VARIABLES*/
+/* #PORTFOLIO PX VARIABLES */
+/* #RECOMMENDATIONS PX VARIABLES */
+/* #CONTACT PX VARIABLES */
+/* MODALS PX VARIABLES */
+/* TITLES STYLE */
+/* TITLES RESPONSIVE STYLE */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body main #about h3.about-subtitle, body #contact .content h2 {
+    font-size: 2.375rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main #about h3.about-subtitle, body #contact .content h2 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #about h3.about-subtitle, body #contact .content h2 {
+    font-size: 2.125rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #about h3.about-subtitle, body #contact .content h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body .modal .modal-content .header .color h2, body main #recommendations span.float h2 {
+    font-size: 1.875rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body .modal .modal-content .header .color h2, body main #recommendations span.float h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body .modal .modal-content .header .color h2, body main #recommendations span.float h2 {
+    font-size: 1.625rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body .modal .modal-content .header .color h2, body main #recommendations span.float h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body .modal .modal-content .modal-card h3, body main #about .card .content h4.strengths-title, body main #recommendations div.slider_one_big_picture .slide .card p, body #contact .content form label {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body .modal .modal-content .modal-card h3, body main #about .card .content h4.strengths-title, body main #recommendations div.slider_one_big_picture .slide .card p, body #contact .content form label {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body .modal .modal-content .modal-card h3, body main #about .card .content h4.strengths-title, body main #recommendations div.slider_one_big_picture .slide .card p, body #contact .content form label {
+    font-size: 1rem;
+  }
+}
+
+/* TEXTS STYLE */
+/* TEXTS RESPONSIVE STYLE */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body #alert .error p, body #alert .true p, body .modal .modal-content p, body main #about p, body main #recommendations div.slider_one_big_picture .slide .card blockquote, body #contact .content form input[type=text], body #contact .content form input[type=email], body #contact .content form textarea, body #contact .content .contact-info p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body #alert .error p, body #alert .true p, body .modal .modal-content p, body main #about p, body main #recommendations div.slider_one_big_picture .slide .card blockquote, body #contact .content form input[type=text], body #contact .content form input[type=email], body #contact .content form textarea, body #contact .content .contact-info p {
+    font-size: 0.875rem;
+  }
+}
+
+/*BUTTONS OUTLINE & FILL STYLE */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body .modal .modal-content .btn, body main #profile .profile-content .profile-info span .btn, body main #about ul.social-menu li, body main #portfolio .mobile .load-more__btn-wrap .load-more__btn, body main #recommendations div.slider_one_big_picture .slide .card a, body #contact .content form input[type=submit], body #contact .content .contact-info div a {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body .modal .modal-content .btn, body main #profile .profile-content .profile-info span .btn, body main #about ul.social-menu li, body main #portfolio .mobile .load-more__btn-wrap .load-more__btn, body main #recommendations div.slider_one_big_picture .slide .card a, body #contact .content form input[type=submit], body #contact .content .contact-info div a {
+    width: 100%;
+  }
+}
+
+/* SECTION HEADER*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body main #about .header .color h2, body main #portfolio .mobile .header .color h2 {
+    font-size: 3.125rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main #about .header .color h2, body main #portfolio .mobile .header .color h2 {
+    font-size: 3.125rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #about .header .color h2, body main #portfolio .mobile .header .color h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #about .header .color h2, body main #portfolio .mobile .header .color h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main #about .header .color img.scrolldown, body main #portfolio .mobile .header .color img.scrolldown {
+    width: 25px;
+    height: 25px;
+    margin: 20px auto 0 auto;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #about .header .color img.scrolldown, body main #portfolio .mobile .header .color img.scrolldown {
+    width: 25px;
+    height: 25px;
+    margin: 20px auto 0 auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #about .header .color img.scrolldown, body main #portfolio .mobile .header .color img.scrolldown {
+    width: 25px;
+    height: 25px;
+    margin: 20px auto 0 auto;
+  }
+}
+
+/* CARDS STYLE */
+/* PROFILE */
+/* PORTFOLIO */
+/* RECOMMENDATIONS */
+/* CSS EFFECTS */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body #alert .error p, body #alert .true p {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body #alert .error p, body #alert .true p {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body #alert .error p, body #alert .true p {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body nav .pushy-content ul li a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body nav .pushy-content ul li a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body nav .pushy-content ul li a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body nav .pushy-content ul li a {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body nav .pushy-content ul li a span {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body nav .pushy-content ul li a span {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body nav .pushy-content ul li a span {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body nav .pushy-content ul li a span {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body nav .pushy-social ul li a span {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body nav .pushy-social ul li a span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body nav .pushy-social ul li a span {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body header h1 {
+    font-size: 1.375rem;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body header h1 {
+    font-size: 1.375rem;
+    align-items: flex-end;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body header h1 {
+    font-size: 1.25rem;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body header div button.menu-btn span {
+    font-size: 1.375rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body header div button.menu-btn span {
+    font-size: 1.375rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body header div ul.social-media {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body header div ul.social-media {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body header div ul.social-media {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body header div ul.social-media li a span {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body header div ul.social-media li a span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body header div ul.social-media li a span {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body footer p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body footer p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body footer p.left, body footer p.right {
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body footer p.left, body footer p.right {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body footer p.left, body footer p.right {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body footer p.right {
+    margin: 4px 0 0 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body footer p.right {
+    margin: 4px 0 0 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body footer p.right {
+    margin: 4px 0 0 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body .modal .modal-content .description p {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body .modal .modal-content .description p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body .modal .modal-content .description p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body .modal .modal-content .description p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body .modal .modal-content .btn {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body .modal .modal-content .btn {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body .modal .modal-content .btn span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body .modal .modal-content .btn span {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main #profile {
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #profile {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #profile {
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main #profile .profile-content {
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #profile .profile-content {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #profile .profile-content {
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #profile .profile-content img {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #profile .profile-content img {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body main #profile .profile-content .profile-info {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main #profile .profile-content .profile-info {
+    justify-content: flex-end;
+    height: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #profile .profile-content .profile-info {
+    justify-content: center;
+    height: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #profile .profile-content .profile-info {
+    justify-content: center;
+    height: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #profile .profile-content .profile-info h2, body main #profile .profile-content .profile-info p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #profile .profile-content .profile-info h2, body main #profile .profile-content .profile-info p {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body main #profile .profile-content .profile-info h2 {
+    font-size: 3.75rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main #profile .profile-content .profile-info h2 {
+    font-size: 3.125rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #profile .profile-content .profile-info h2 {
+    font-size: 3.125rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #profile .profile-content .profile-info h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body main #profile .profile-content .profile-info p {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main #profile .profile-content .profile-info p {
+    font-size: 1.875rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #profile .profile-content .profile-info p {
+    font-size: 1.875rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #profile .profile-content .profile-info p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #profile .profile-content .profile-info span {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #profile .profile-content .profile-info span {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main #profile .profile-content .profile-info span .btn {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #profile .profile-content .profile-info span .btn {
+    font-size: 1rem;
+    margin: 0 0 18px 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #profile .profile-content .profile-info span .btn {
+    font-size: 0.875rem;
+    margin: 0 0 18px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main #about .header .color img.profile {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #about .header .color img.profile {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #about .header .color img.profile {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #about .skill-card .content h4, body main #about .skill-card .content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #about .skill-card .content h4, body main #about .skill-card .content p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main #about .skill-card .content img.logo {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #about .skill-card .content img.logo {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #about .skill-card .content img.logo {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+body main #about ul.social-menu {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main #about ul.social-menu li {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #about ul.social-menu li {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 0 20px 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #about ul.social-menu li {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 0 20px 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body main #about ul.social-menu li a span {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main #about ul.social-menu li a span {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #about ul.social-menu li a span {
+    font-size: 1.375rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #about ul.social-menu li a span {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main #portfolio {
+    height: auto;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #portfolio {
+    height: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #portfolio {
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main #portfolio .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #portfolio .desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #portfolio .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body main #portfolio .desktop .portfolio-content span.float h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main #portfolio .desktop .portfolio-content span.float h2 {
+    font-size: 3.75rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #portfolio .desktop .portfolio-content span.float h2 {
+    font-size: 3.375rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #portfolio .desktop .portfolio-content span.float h2 {
+    font-size: 3.125rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main #portfolio .mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #portfolio .mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #portfolio .mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main #portfolio .mobile figure .btn {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #portfolio .mobile figure .btn {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #portfolio .mobile figure .btn {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main #portfolio .mobile .load-more__btn-wrap .load-more__btn {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #portfolio .mobile .load-more__btn-wrap .load-more__btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #portfolio .mobile .load-more__btn-wrap .load-more__btn {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main #recommendations {
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #recommendations {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #recommendations {
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main #recommendations .nav_indicators ul li {
+    width: 10px !important;
+    height: 10px !important;
+    margin: 6px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main #recommendations .nav_indicators ul li {
+    width: 10px !important;
+    height: 10px !important;
+    margin: 6px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body main #recommendations .nav_indicators ul li {
+    width: 10px !important;
+    height: 10px !important;
+    margin: 6px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body #contact .content form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body #contact .content form {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body #contact .content .contact-info div a {
+    font-size: 1rem;
+    margin: 0 0 10px 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body #contact .content .contact-info div a {
+    font-size: 1rem;
+    margin: 0 0 10px 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body #contact .content .contact-info div a {
+    font-size: 0.875rem;
+    margin: 0 0 10px 0;
+  }
+}

@@ -10,7 +10,7 @@
 
 <div class="container-loader">
     <div id="about">
-        <div id="scroll_top" class="header">
+        <div class="header">
             <div class="color">
                 <span class="profile-image">
                     <img src="<?= the_post_thumbnail_url(); ?>" class="profile">
@@ -22,7 +22,7 @@
             </div>
         </div> 
     
-        <div class="container-fluid mt-80px p-0 wow animate__animated animate__backInLeft" data-wow-duration="1000ms">
+        <div id="scroll_top" class="container-fluid mt-80px p-0 wow animate__animated animate__backInLeft" data-wow-duration="1000ms">
             <div class="row row-80 mx-auto my-0 p-0 scroll-element">
                <div class="col-lg-9 order-2 order-lg-1">
                     <div class="card">
@@ -88,7 +88,7 @@
             
         </div>
 
-        <div class="container-fluid mt-120px p-0 wow animate__animated animate__backInUp" data-wow-duration="1000ms">
+        <div id="services" class="container-fluid mt-120px p-0">
             <div class="row row-80 mx-auto my-0 p-0">
                 <div class="col-lg-12">
                     <h3 class="about-subtitle"><?php the_field('about_title_two'); ?></h3>

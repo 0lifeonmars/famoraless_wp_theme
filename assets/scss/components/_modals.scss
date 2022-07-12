@@ -32,7 +32,7 @@ body{
         .modal-content{
             @include space(0, $modal-content-margin);
             position: relative;
-            background: $color-white;
+            background: $color-grey;
             border-radius: $modal-content-radius;
             -webkit-border-radius: $modal-content-radius;
             -moz-border-radius: $modal-content-radius;

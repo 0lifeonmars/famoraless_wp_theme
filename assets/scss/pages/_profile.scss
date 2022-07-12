@@ -74,12 +74,8 @@ body{
 
                         .btn{
                             margin: $profile-info-btn-margin-xl;
-                            color: $color-pink;
-                            font-size: $f-size-18;
-                            border-color: $color-pink;
                             background-color: $color-trans-black-8;
-                            box-shadow: $profile-info-btn-normal-boxshadow;
-                            -webkit-box-shadow: $profile-info-btn-normal-boxshadow;                                        
+                            font-size: $f-size-18;                                      
                             @extend %btn-general-style;
                             @extend %btn-outline-style;
                             @extend %bounceInDown-effect;
@@ -87,10 +83,17 @@ body{
                             &:last-child{
                                 margin: $profile-info-btn-margin-sm;
                             }
-                                
+                        }
+
+                        .btn-portfolio{
+                            color: $color-pink;
+                            border-color: $color-pink;
+                            box-shadow: $profile-info-btn-portfolio-normal-boxshadow;
+                            -webkit-box-shadow: $profile-info-btn-portfolio-normal-boxshadow;
+
                             &:hover{
-                                box-shadow: $profile-info-btn-hover-boxshadow;
-                                -webkit-box-shadow: $profile-info-btn-hover-boxshadow;
+                                box-shadow: $profile-info-btn-portfolio-hover-boxshadow;
+                                -webkit-box-shadow: $profile-info-btn-portfolio-hover-boxshadow;
                             }
 
                             &:active{
@@ -100,6 +103,27 @@ body{
 
                             &:visited{
                                 color: $color-pink;
+                            }
+                        }
+
+                        .btn-about{
+                            color: $color-yellow;
+                            border-color: $color-yellow;
+                            box-shadow: $profile-info-btn-about-normal-boxshadow;
+                            -webkit-box-shadow: $profile-info-btn-about-normal-boxshadow;
+
+                            &:hover{
+                                box-shadow: $profile-info-btn-about-hover-boxshadow;
+                                -webkit-box-shadow: $profile-info-btn-about-hover-boxshadow;
+                            }
+
+                            &:active{
+                                box-shadow: 0 0 #E8F044;
+                                -webkit-box-shadow: 0 0 #E8F044;
+                            }
+
+                            &:visited{
+                                color: $color-yellow;
                             }
                         }
                     }
